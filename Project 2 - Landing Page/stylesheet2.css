@@ -1,0 +1,139 @@
+/* Paul Irish Box-Sizing: Border-Box reset - apply a natural box layout model to all elements, but allowing components to change http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+/* End of Reset */
+/* Start of Custom Styles */
+.content {
+    padding: 0 15px;
+}
+/* Navigation Section */
+.top-navigation {
+    background-color: #fff;
+}
+.top-navigation > .content {
+    margin: 0 auto;
+    width: 970px;
+    height: 70px;
+}
+.top-navigation .logo {
+    height: 36px;
+    padding-top: 10px;
+}
+.top-navigation .links {
+    float: right;
+    font-family: 'Roboto', sans-serif;
+    color: #838994;
+    font-size: 16px;
+    margin-top: 25px;
+    -webkit-font-smoothing: antialiased;
+}
+.top-navigation .links li {
+    display: inline-block;
+    margin-left: 25px;
+}
+.top-navigation .links .active {
+    color: #4c5058;
+    font-weight: 500;
+}
+.top-navigation .links li:hover {
+    cursor: pointer;
+    color: #333333;
+}
+/* Hero CSS */
+/* Controls the image */
+.introduction {
+    background-image: url('images/first-background.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45.938rem;
+    overflow: auto;
+}
+
+.content > h1, h3{
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    vertical-align:baseline;
+}
+.content > h1 {
+    margin-top: 17.5rem;
+    font-size: 3.125rem;
+}
+.content > h3 {
+    margin-top: 1.25rem;
+    font-size: 1.563rem;
+    padding-top:10px;
+}
+/**
+ * The buttons
+ */
+.introduction .button {
+    color: white;
+    text-align: center;
+    margin-top: 1.563rem;
+}
+.introduction .half {
+    width: 100px;
+    padding: 0 0.938rem;
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 1.125rem;
+    line-height: 1.2;
+}
+
+/* Controls the orange button */
+.button {
+    background-color: orange;
+    display: block;
+    margin: 0 auto;
+    border-style: none;
+    border-radius: 4px;
+    padding: 16px 26px;
+    line-height: 1.33;
+}
+
+button:hover {
+    background-color: #D9400E;
+    border-color: #CF3D0E;
+    cursor: pointer;
+}
