@@ -1,0 +1,97 @@
+p {
+    text-shadow: 1px 5px 8px #ffffff;
+}
+
+body {
+    /* Typography Declarations */
+    color: #222222;
+    font-size: 1em;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    background-image: url("http://fc00.deviantart.net/fs16/f/2007/190/f/d/Ninja_Gaiden_rules_by_Texas_Grizzly2007.jpg");
+    background-position: 50% 70%;
+    background-repeat: no-repeat;
+}
+
+.masthead-heading,
+.masthead-intro {
+    text-align: center;
+    color: white;
+    text-shadow: 0px 4px 0px #000;
+}
+
+.content-footer {
+    text-align: center;
+}
+
+.masthead {
+    padding: 6em 0;
+    background-image: url('http://1.bp.blogspot.com/-3XhCQhOUayE/UYs-cPbDveI/AAAAAAAAH3k/gjF9AALMY8g/s930/multi%2Bgalaxy%2Bheader.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: solid 1em #000;
+}
+
+.masthead-intro {
+    margin-bottom: 0.1em;
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 2em;
+}
+
+.masthead-heading {
+    margin-top: -0.2em;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    font-size: 6em;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.introduction-section,
+.location-section,
+.questions-section {
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    text-shadow: 0px 5px 5px #fff;
+}
+
+.social > li {
+    display: inline-block;
+}
+
+/*paragraph styling*/
+.introduction > p,
+.location > p,
+.content-footer > p {
+    /* Typography Declarations */
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    text-shadow: 0px 5px 5px #fff;
+}
+
+/*questions styling*/
+.questions-section > h2 {
+    /* Typography Declarations */
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+footer {
+    background-image: url(http://subtlepatterns.com/patterns/footer_lodyas.png);
+    background-size: cover;
+}
+
+footer > p {
+    color: white;
+    text-shadow: 0px 1px 1px #000;
+}
+
+.content-footer {
+    margin-top: 3em;
+    padding: 1em;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    max-width: none;
+}
