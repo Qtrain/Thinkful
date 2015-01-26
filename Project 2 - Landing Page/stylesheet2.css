@@ -137,3 +137,67 @@ button:hover {
     border-color: #CF3D0E;
     cursor: pointer;
 }
+
+/* Case Images */
+.cases {
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 5rem;
+}
+.cases .content {
+    margin-top: 7.875rem;
+    padding: none;
+    color: #1d1e21;
+    text-align: center;
+}
+.cases h2 {
+    font-size: 2.75rem;
+    margin: 1.625rem 0 3.125rem;
+    font-weight: 300;
+}
+.cases .devices > li {
+    width: 33.3333333%;
+    float:left;
+}
+.cases .devices .caption h3 {
+    color:black;
+    font-weight: 400;
+    font-size: 1.563rem;
+    margin: 2.5rem 0px 1.875rem;
+}
+.cases .devices p {
+    font-weight: 300;
+    font-size: 1.313rem;
+}
+
+/* Footer */
+footer {
+    background-image: url(http://subtlepatterns.com/patterns/footer_lodyas.png);
+    background-size: cover;
+    text-align: center;
+}
+
+footer > p {
+    color: white;
+    text-shadow: 0px 1px 1px #000;
+}
+
+.social > li {
+    display: inline-block;
+}
+
+.content-footer {
+    margin-top: 3em;
+    padding: 1em;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    max-width: none;
+}
+
+.content-footer > p{
+    font-weight: 300;
+    padding: 10px;
+    letter-spacing: 0.05em;
+    text-shadow: 0px 1px 5px #fff;
+}
+
