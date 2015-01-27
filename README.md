@@ -1,4 +1,4 @@
-<h1>Thinkful tutorial on Front End Design</h1>
+<h1>Thinkful Tutorial on Front End Design</h1>
 <h3>First Project - About me page</h3>
 <p>During this lesson you will be coding an "About Me" website based on this example design . You will learn to use CodePen which will then be used to complete this project.</p>
 
