@@ -1,0 +1,21 @@
+The Dom:
+
+    The DOM illustrates the state of a web page at any given time as a tree-like
+    structure comprised of parent and children nodes.
+
+    The DOM is the browser's representation of an HTML web page. Because the DOM is HTML
+    and to create a web page we use HTML, you may think that the main HTML file is the DOM;
+    however, that is not exactly correct. As we said, the DOM is the browser's representation,
+    so this means the HTML is actually created by the browser.
+
+    When you want to change your representation of the html make sure that you reference the DOM.
+
+Console tools:
+
+    Finding if a page uses jquery:
+    First see if you can use the jQuery tools by typing jQ in the console and seeing if jQuery shows up.
+    It does, which means the Thinkful page uses jQuery.
+
+The JQuery API
+
+    http://api.jquery.com/
