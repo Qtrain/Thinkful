@@ -95,3 +95,102 @@ footer > p {
     letter-spacing: 0.05em;
     max-width: none;
 }
+
+/* Properties in this stylesheet
+background-image
+background-size
+background-position
+background-repeat
+border-top
+color
+font-weight
+font-family
+font-size
+font-weight
+display
+letter-spacing
+margin
+  margin-top
+  margin-right
+  margin-left
+  margin-bottom
+max-width
+padding
+text-shadow
+text-transform
+
+/*
+Body
+    color
+    font-size
+    font-family
+    background-image
+    background-position
+    background-repeat
+
+.masthead-intro
+    margin-bottom
+    font-family
+    font-size
+
+.content-footer
+    text-align
+
+.masthead
+    padding
+    background-image
+    background-repeat
+    background-size
+    border-top
+
+.masthead-heading
+    margin-top
+    font-family
+    font-weight
+    font-size
+    letter-spacing
+    text-transform
+
+
+.introduction-section,
+.location-section,
+.questions-section
+    max-width
+    margin-left
+    margin-right
+    margin-top
+    text-shadow
+
+
+.social > li
+    display
+
+.introduction > p,
+.location > p,
+.content-footer > p
+
+    font-weight
+    letter-spacing
+    text-shadow
+
+.questions-section > h2
+    font-family
+    font-size
+    font-weight
+
+footer
+    background-image
+    background-size
+
+footer > p
+    color
+    text-shadow
+
+.content-footer {
+    margin-top
+    padding
+    font-weight
+    letter-spacing
+    max-width
+
+css selector reference: http://www.w3schools.com/cssref/css_selectors.asp
