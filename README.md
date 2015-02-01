@@ -10,7 +10,7 @@
 <p>For this project, you will clone the landing page of a startup called Karma . Since Karma is a live startup that regularly updates their site, the link above will send you to a previous version of Karma's site.</p>
 
 <h3>Project 3 - JQuery</h3>
-<p>Created a web page that loads a hello world dialog.  Also gathered some examples from w3c on JQuery selectors, effects and events.<p>
+<p>Created a web page that loads a hello world dialog.  Also gathered some examples from w3c on JQuery selectors, effects and events.</p>
 <h5>To-do</h5>
 - Go back over notes
 - add more effects
