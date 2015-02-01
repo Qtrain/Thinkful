@@ -11,7 +11,7 @@
 
 <h3>Project 3 - JQuery</h3>
 <p>Created a web page that loads a hello world dialog.  Also gathered some examples from w3c on JQuery selectors, effects and events.<p>
-<h5>To-do<h5>
+<h5>To-do</h5>
 - Go back over notes
 - add more effects
 - add links to more documentation
