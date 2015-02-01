@@ -21,3 +21,4 @@
 
 <h3>Project 4 - Streetfigher</h3>
 <p>Create a webpage that uses jquery hide and show effects to animate Ryu from Streetfighter.  He can throw a hadouken - Personally, I think a dragon punch would have been more impressive...</p>
+- not working. ryu-throwing not showing correctly

@@ -10,12 +10,26 @@
 </head>
 <body>
 <div class="main">
-    <div class="ryu">
-        <div class="ryu-still"></div>
-        <div class="ryu-ready"></div>
-        <div class="ryu-throwing"></div>
+    <div class="ryu-container">
+        <div class="ryu">
+            <div class="ryu-still ryu-action" style="display: none;"></div>
+            <div class="ryu-ready ryu-action" style="display: block;"></div>
+            <div class="ryu-throwing ryu-action" style="display: none;"></div>
+            <div class="ryu-cool ryu-action" style="display: none;"></div>
+        </div>
+        <div class="hadouken" style="display: none; left: -212px;"></div>
     </div>
-    <div class="hadouken"></div>
+    <div class="text-content">
+        <div class="sf-logo" style="display: none;"></div>
+        <div class="jquery-logo" style="display: none;"></div>
+        <div class="brought-by" style="display: none;">
+            brought to you by...
+        </div>
+    </div>
 </div>
-</body>
+<audio id="theme-song" src="sound/street-fighter-theme.mp3">
+    <audio id="hadouken-sound" src="sound/hadouken.mp3">
+        <audio src="sound/cool.mp3" id="cool"></audio>
+
+    </audio></audio></body>
 </html>
