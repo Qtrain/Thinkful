@@ -4,7 +4,8 @@
 $(document).ready(function () {
     $('#add').click(function() {
         //console.log('clicked');
-        $('ul').append('<li>New Item</li>')
+        var addItem = prompt('Enter an item to add to your todo list');
+        $('ul').append('<li>' + addItem + '</li>')
     })
         $('#delete').click(function(){
             $('li:last').remove();
