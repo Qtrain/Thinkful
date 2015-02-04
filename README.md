@@ -12,13 +12,19 @@
 <h3>Project 3 - JQuery</h3>
 <p>Created a web page that loads a hello world dialog.  Also gathered some examples from w3c on JQuery selectors, effects and events.</p>
 <h5>To-do</h5>
-- Go back over notes
 - add more effects
 - add links to more documentation
 - explore jquery api
-- possibly put all effects into bootstrap
+- possibly put all effects into bootstrap?
 - add menu?
 
 <h3>Project 4 - Streetfigher</h3>
 <p>Create a webpage that uses jquery hide and show effects to animate Ryu from Streetfighter.  He can throw a hadouken - Personally, I think a dragon punch would have been more impressive...</p>
-- not working. ryu-throwing not showing correctly
+
+<h3>Project 5 - JQuery shopping list app</h3>
+<p>Create a shopping list app (more aptly a to-do list) using concepts learned thus far using html5 semantic tags, css with a focus on positioning and jquery</p>
+<h5>To-Do(haha)</h5>
+- jquery popup form for input
+- handle input and append list
+- add deleted tasks to completed
+- checkboxes?
