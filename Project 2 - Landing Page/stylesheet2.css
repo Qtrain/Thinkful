@@ -42,6 +42,9 @@ ol, ul {
 }
 /* End of Reset */
 /* Start of Custom Styles */
+*{
+    border: 1px solid black;
+}
 .content {
     padding: 0 15px;
 }
@@ -139,6 +142,7 @@ button:hover {
 }
 
 /* Case Images */
+
 .cases {
     background-color: #fff;
     overflow: hidden;

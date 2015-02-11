@@ -14,18 +14,66 @@
 </head>
 <body>
 <h1>Common JQuery usage</h1><br>
-    <h2>Hiding Elements with a button (JQuery Selectors)</h2>
+  <div class="box">
+    <!-- hide(), show(), toggle() -->
+    <h2>.hide()</h2>
         <p>This is a paragraph.</p>
         <p>This is another paragraph.</p>
-        <button id = "one">Click me</button>
-    <br>
-    <h2>Hiding h5 elements with id test using a (JQuery Events)</h2>
-        <h5>Click me away!</h5>
-    <br>
-    <h2>Change colors (JQuery Effects)</h2>
-        <h4>Click this text to see effect</h4>
+        <button id = "one">Click me to hide text using .click() and .hide()</button>
+  </div>
+  <div class="box">
+    <h2>.hide()</h2>
+        <p class="hide">Click me away using .click() and .hide() methods!</p>
+  </div>
+  <div class="box">
+    <!--fadeIn(), fadeOut(), fadeToggle(), fadeTo() -->
+    <h2>.fadeIn()</h2>
+        <h4>Click this text to see fadein() method for three colored boxes</h4>
             <div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
             <div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
             <div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+  </div>
+  <div class="box">
+    <!-- click(), dblclick(), mouseenter(), mouseleave(), mousedown(), mouseup(), hover(), focus(), blur() -->
+    <h2>.mouseenter(), .hover()</h2>
+        <h4>Mouse Enter</h4>
+            <p class = "mouseenter">Enter this domain</p>
+        <h4>Hover</h4>
+            <p class = "hover">Hover example</p>
+  </div>
+  <div class="box">
+    <!-- slideDown(), slideup(),  -->
+    <h2>.slideDown(), .slideup() [also using .click() and .dblclick()]</h2>
+        <div id="flip">Click to slide down panel/double click to slide up</div>
+        <div id="panel">Hello world!</div>
+  </div>
+  <div class="box">
+    <!-- animate(), -->
+    <h2>.animate()</h2>
+
+        <button class = "animate">Start Animation</button>
+        <div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+  </div>
+  <div class="box">
+      <section class="todo">
+          <div class="todoStyling">
+              <h2>.append(), .click()</h2>
+              <ul>
+                  <li>Milk</li>
+                  <li>Sugar</li>
+                  <li>Tits</li>
+              </ul>
+              <div class="buttons">
+                  <button id="add">Add item</button>
+                  <button id="delete">Delete item</button>
+              </div>
+          </div>
+      </section>
+  </div>
+  <div class="box">
+      <h2>Callback Function (important concept)</h2>
+      <button class="callback">Hide</button>
+      <p class="callback">This is a paragraph with little content.</p>
+  </div>
 </body>
 </html>

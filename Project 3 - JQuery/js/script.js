@@ -30,11 +30,11 @@ $(document).ready(function(){
 /* 2 Events http://www.w3schools.com/jquery/jquery_ref_events.asp */
 /* hides current element (this) on click event */
 $(document).ready(function(){
-    $("h5").click(function(){
+    $("p.hide").click(function(){
         $(this).hide();
     });
 });
-/* 3 Effects http://www.w3schools.com/jquery/jquery_ref_effects.asp*/
+//click(), fadeIn()
 $(document).ready(function(){
     $("h4").click(function(){
         $("#div1").fadeIn();
@@ -42,6 +42,80 @@ $(document).ready(function(){
         $("#div3").fadeIn(3000);
     });
 });
+
+//click() and hide()
+$(document).ready(function(){
+    $("p.click").click(function(){
+        $(this).hide();
+    });
+});
+
+//mouseenter
+$(document).ready(function(){
+    $("p.mouseenter").mouseenter(function(){
+        alert("You entered p1!");
+        console.log("it worked")
+    });
+});
+//also mouseleave, mouseup and mousedown can you write them?
+
+//hover - not working
+$(document).ready(function(){
+    $("p.hover").hover(function(){
+        $(this).blur(function(){
+            $(this).css("background-color", "#fff");
+        });
+    })
+})
+
+//slideDown()
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+    });
+});
+
+//slideup()
+$(document).ready(function(){
+    $("#flip").dblclick(function(){
+        $("#panel").slideUp("slow");
+    });
+});
+
+//animate()
+$(document).ready(function(){
+    $("button.animate").click(function(){
+        $("div").animate({
+            left: '250px',
+            opacity: '0.5',
+            height: '150px',
+            width: '150px'
+        });
+    });
+});
+
+//append to list
+$(document).ready(function () {
+    $('#add').click(function() {
+        //console.log('clicked');
+        var addItem = prompt('Enter an item to add to your todo list');
+        $('ul').append('<li>' + addItem + '</li>')
+    })
+    $('#delete').click(function(){
+        $('li:last').remove();
+    })
+});
+
+//callback
+$(document).ready(function(){
+    $("button.callback").click(function(){
+        $("p.callback").hide("slow", function(){
+            alert("The paragraph is now hidden");
+        });
+    });
+});
+
+
 
 /*
 Examples of selectors: Notice the similarities to css here?
