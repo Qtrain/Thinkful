@@ -24,7 +24,5 @@
 <h3>Project 5 - JQuery shopping list app</h3>
 <p>Create a shopping list app (more aptly a to-do list) using concepts learned thus far using html5 semantic tags, css with a focus on positioning and jquery</p>
 <h5>To-Do(haha)</h5>
-- jquery popup form for input
-- handle input and append list
 - add deleted tasks to completed
 - checkboxes?
