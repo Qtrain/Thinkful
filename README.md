@@ -26,3 +26,11 @@
 <h5>To-Do(haha)</h5>
 - add deleted tasks to completed
 - checkboxes?
+
+<h3>Project 6 - Javascript</h3>
+<p>Crash course on Javascript<p>
+- added two different "fizzBuzz" methods
+<h5>To-Do</h5>
+- add JS syntax cheat sheet
+- page on function scope
+- create small informative website on some core JS concepts
