@@ -28,6 +28,15 @@
 - checkboxes?
 
 <h3>Project 6 - Javascript</h3>
+<<<<<<< HEAD
 <p>Created static site detailing the foundations of javascript.  Includes fizzBuzz exercise</p>
 <h5>To-Do</h5>
 - fizzBuzz refactor
+=======
+<p>Crash course on Javascript<p>
+- added two different "fizzBuzz" methods
+<h5>To-Do</h5>
+- add JS syntax cheat sheet
+- page on function scope
+- create small informative website on some core JS concepts
+>>>>>>> a52cc04ae5fc69f02993ed3ead9d894ef91aa5d0
