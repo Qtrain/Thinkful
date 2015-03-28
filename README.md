@@ -26,3 +26,8 @@
 <h5>To-Do(haha)</h5>
 - add deleted tasks to completed
 - checkboxes?
+
+<h3>Project 6 - Javascript</h3>
+<p>Created static site detailing the foundations of javascript.  Includes fizzBuzz exercise</p>
+<h5>To-Do</h5>
+- fizzBuzz refactor
