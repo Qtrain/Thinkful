@@ -1,8 +1,14 @@
-h1{
+body{
+    background-image: url("http://images.wikia.com/mortalkombat/es/images/f/fd/Scorfatal.gif");
+}
+header{
+    font-size: 5em;
+    margin-top: -10px;
     text-align: center;
     border: 1px solid black;
     padding: 10px;
-    background-color: limegreen;
+    background-color: red;
+    color: whitesmoke;
 
 }
 h2{
@@ -14,6 +20,9 @@ h2{
     padding: 50px;
     float: left;
     display: inline-block;
+    background-color: whitesmoke;
+    box-shadow: 10px 10px #000;
+    border-radius: 10px;
 }
 
 #panel, #flip {

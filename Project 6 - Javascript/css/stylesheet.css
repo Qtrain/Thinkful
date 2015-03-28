@@ -1,0 +1,80 @@
+body{
+    padding: 100px;
+}
+
+p{
+    padding: 4em;
+}
+li{
+    line-height: 200%;
+}
+h3{
+    margin-top:3em;
+}
+
+.refactor{
+    padding: 1000px;
+}
+.col-md-8 > ul{
+    padding: 2em;
+}
+
+.greyBox{
+    width: auto;
+    box-sizing: border-box;
+    background: none repeat scroll 0% 0% #F5F5F5;
+    padding: 10px 10px 5px;
+    margin: 10px 0px 20px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+}
+
+
+.inlineCode {
+    padding: .2rem .5rem;
+    margin: 0 .2rem;
+    font-size: 90%;
+    background: #FAF6E9;
+    border: 1px solid #000;
+    border-radius: 4px;
+    background-color: lightgray;
+    font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;
+    word-break: keep-all;
+}
+
+
+.top-navigation {
+    background-color: bisque;
+    border: 1px solid black;
+}
+.top-navigation > .content {
+    margin: 0 auto;
+    width: 970px;
+    height: 70px;
+}
+.top-navigation .logo {
+    height: 75px;
+    width: 75px;
+    padding: 10px 0px 10px 20px;
+}
+.top-navigation .links {
+    float: right;
+    font-family: 'Roboto', sans-serif;
+    color: #838994;
+    font-size: 16px;
+    margin-top: 25px;
+    -webkit-font-smoothing: antialiased;
+    padding: 10px 100px 0px 10px;
+}
+.top-navigation .links li {
+    display: inline-block;
+    margin-left: 25px;
+}
+.top-navigation .links .active {
+    color: #4c5058;
+    font-weight: 500;
+}
+.top-navigation .links li:hover {
+    cursor: pointer;
+    color: #333333;
+}

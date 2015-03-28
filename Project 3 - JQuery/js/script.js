@@ -12,11 +12,11 @@
  */
 
 /* This function selects the document object uses the .ready event
-and uses the alert method to display a window that says 'hello world'
+and uses the alert method to display a window that says 'fight'
 when the page is loaded.
  */
 $(document).ready(function(){
-    alert("hello world");
+    alert("Fight!");
 });
 
 /* Common JQuery Functions */
