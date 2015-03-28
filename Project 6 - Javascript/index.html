@@ -5,7 +5,13 @@
     <link rel="stylesheet" type="text/css" href=" css/stylesheet.css">
     <link rel="stylesheet" type="text/css" href=" css/prism.css">
     <script src=" js/prism.js"></script>
-    <script src=" js/nav.js"></script>
+    <!-- jquery -->
+    <script src=" js/jquery-2.1.3.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script src="js/functions.js"></script>
+
     <!-- bootstrap -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -726,6 +732,27 @@
 </div>
 <h3 id="refactor">FizzBuzz Refactor</h3>
 <section class="refactor">
+    <div class="row">
+        <div class="col-md-4">
+            <h5><em>Steps for this program</em></h5>
+            <ul>
+                <li>When the page loads, the user should be prompted to supply a number. The easiest way to do this would be with the prompt() function, but you should also feel free to create a simple text input with text telling the user to input a number.</li>
+                <li>You’ll need to write one named function that takes an integer as argument, and then counts from 1 to the argument value, substituting “fizz”, “buzz”, and “fizzbuzz” accordingly.</li>
+                <li>You’ll need to convert the value the user supplies from a string to a number. Remember that the value that you get from prompt() or the val() on your form will by default be a string. To convert this to an integer you can use the + operator to convert a string to an integer. For instance, if you had the string “22”, you could convert that to a number with +”22”.</li>
+                <li>Note that if you try to convert something like "this is a string" to an integer with +"this is a string", it will evaluate to NaN. Your app should ensure that the user supplied value does not evaluate to NaN. If it does, you should supply a message telling them they need to supply a number.</li>
+                <li>Optionally, you can also write code to ensure that the user has not supplied a decimal value. For an easy way to do this, check out <a href="http://stackoverflow.com/questions/2304052/check-if-a-number-has-a-decimal-place-is-a-whole-number/2304062#2304062" alt="" target="_blank">this answer</a> on Stack Overflow.</li>
+                <li><strong>DO NOT</strong> spend any time thinking about design for this app. Like the first version, the goal here is not to create a pretty app, but instead to hone your JavaScript skills.</li>
+            </ul>
+        </div>
+        <div class="col-md-8">
+            <h5>Click to play</h5>
+            <ul id="fizz">
+
+            </ul>
+            <button id="fb">fizzbuzz</button>
+
+        </div>
+    </div>
 
 </section>
 <h3 id="#truthiness">Truthiness</h3>
