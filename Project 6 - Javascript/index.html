@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<div>
 <head lang="en">
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href=" css/stylesheet.css">
+
     <link rel="stylesheet" type="text/css" href=" css/prism.css">
     <script src=" js/prism.js"></script>
     <!-- jquery -->
@@ -21,17 +21,19 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href=" css/stylesheet.css">
     <title>Javascript Syntax</title>
 </head>
 
 <!-- Nav -->
-<body>
+<div>
 <nav class="top-navigation">
     <div class="navbar navbar-default navbar-fixed-top">
         <div class="content">
             <ul class="links">
                 <li class="active">Home</li>
-                <li><a href="#functions">Functions</a></li>
+                <li><a href="#functions">Syntax</a></li>
                 <li><a href="#fizzBuzz">FizzBuzz</a></li>
                 <li><a href="#refactor">FizzBuzzRefactor</a></li>
                 <li><a href="#truthiness">Truthiness</a></li>
@@ -43,12 +45,13 @@
 </nav>
 <br>
 
-<h3>Syntax Guide</h3>
 <!-- end nav -->
 <!-------------- Section ------------------>
+<h5 id="numbersStringsAndThings"><span class="inlineCode" style="font-size:22px;">Comments</span></h5>
+
 <div class="row">
     <div class="col-md-6">
-                <pre><code class="javascript">
+                <pre><code class="language-javascript">
                     // Comments are like C. Single-line comments start with two slashes
 
                     /* and multiline comments start with slash-star
@@ -69,7 +72,6 @@
     </div>
     <div class="col-md-6">
         <div class="greyBox">
-            <h5>Language Characteristics</h5>
             <ul>
                 <li>Loosely typed</li>
                 <li>Interpreted</li>
@@ -96,16 +98,11 @@
 </div>
 <div class="row">
     <div class="col-md-6">
-        <h5 id="numbersStringsAndThings"></h5>
+        <h5 id="numbersStringsAndThings"><span class="inlineCode" style="font-size:22px;">Numbers</span></h5>
                 <pre><code class="language-javascript">
-
-
-                    ///////////////////////////////////
-                    // 1. Numbers, Strings and Operators
-
                     // JavaScript has one number type (which is a 64-bit IEEE 754 double).
                     // Doubles have a 52-bit mantissa, which is enough to store integers
-                    //    up to about 9✕10¹⁵ precisely.
+                    // up to about 9✕10¹⁵ precisely.
                     3; // = 3
                     1.5; // = 1.5
 
@@ -130,72 +127,84 @@
                     Infinity; // result of e.g. 1/0
                     -Infinity; // result of e.g. -1/0
                     NaN; // result of e.g. 0/0
-
-                    // There's also a boolean type.
-                    true;
-                    false;
-
-                    // Strings are created with ' or ".
-                    'abc';
-                    "Hello, world";
-
-                    // Negation uses the ! symbol
-                    !true; // = false
-                    !false; // = true
-
-                    // Equality is ===
-                    1 === 1; // = true
-                    2 === 1; // = false
-
-                    // Inequality is !==
-                    1 !== 1; // = false
-                    2 !== 1; // = true
-
-                    // More comparisons
-                    1 < 10; // = true
-                    1 > 10; // = false
-                    2 <= 2; // = true
-                    2 >= 2; // = true
-
-                    // Strings are concatenated with +
-                    "Hello " + "world!"; // = "Hello world!"
-
-                    // and are compared with < and >
-                    "a" < "b"; // = true
-
-                    // Type coercion is performed for comparisons with double equals...
-                    "5" == 5; // = true
-                    null == undefined; // = true
-
-                    // ...unless you use ===
-                    "5" === 5; // = false
-                    null === undefined; // = false
-
-                    // ...which can result in some weird behaviour...
-                    13 + !0; // 14
-                    "13" + !0; // '13true'
-
-                    // You can access characters in a string with `charAt`
-                    "This is a string".charAt(0);  // = 'T'
-
-                    // ...or use `substring` to get larger pieces.
-                    "Hello world".substring(0, 5); // = "Hello"
-
-                    // `length` is a property, so don't use ().
-                    "Hello".length; // = 5
-
-                    // There's also `null` and `undefined`.
-                    null;      // used to indicate a deliberate non-value
-                    undefined; // used to indicate a value is not currently present (although
-                    // `undefined` is actually a value itself)
-
-                    // false, null, undefined, NaN, 0 and "" are falsy; everything else is truthy.
-                    // Note that 0 is falsy and "0" is truthy, even though 0 == "0".
-
                 </code></pre>
     </div>
-
     <div class="col-md-6">
+        <h5 id="numbersStringsAndThings"><span class="inlineCode" style="font-size:22px;">Booleans</span></h5>
+        <pre><code class="language-javascript">
+
+            // There's also a boolean type.
+            true;
+            false;
+
+            // Negation uses the ! symbol
+            !true; // = false
+            !false; // = true
+
+            // Equality is ===
+            1 === 1; // = true
+            2 === 1; // = false
+
+            // Inequality is !==
+            1 !== 1; // = false
+            2 !== 1; // = true
+
+            // More comparisons
+            1 < 10; // = true
+            1 > 10; // = false
+            2 <= 2; // = true
+            2 >= 2; // = true
+
+            // and are compared with < and >
+            "a" < "b"; // = true
+
+            // Type coercion is performed for comparisons with double equals...
+            "5" == 5; // = true
+            null == undefined; // = true
+
+            // ...unless you use ===
+            "5" === 5; // = false
+            null === undefined; // = false
+
+            // ...which can result in some weird behaviour...
+            13 + !0; // 14
+            "13" + !0; // '13true'
+        </code></pre>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <h5 id="strings"><span class="inlineCode" style="font-size:22px;">Strings</span></h5>
+            <pre><code class="language-javascript">
+
+                // Strings are created with ' or ".
+                'abc';
+                "Hello, world";
+
+                // Strings are concatenated with +
+                "Hello " + "world!"; // = "Hello world!"
+
+                // You can access characters in a string with `charAt`
+                "This is a string".charAt(0); // = 'T'
+
+                // ...or use `substring` to get larger pieces.
+                "Hello world".substring(0, 5); // = "Hello"
+
+                // `length` is a property, so don't use ().
+                "Hello".length; // = 5
+
+                // There's also `null` and `undefined`.
+                null; // used to indicate a deliberate non-value
+                undefined; // used to indicate a value is not currently present (although
+                // `undefined` is actually a value itself)
+
+                // false, null, undefined, NaN, 0 and "" are falsy; everything else is truthy.
+                // Note that 0 is falsy and "0" is truthy, even though 0 == "0".
+
+            </code></pre>
+    </div>
+    <div class="col-md-6">
+        <h5 id="variables"><span class="inlineCode" style="font-size:22px;">Variables</span></h5>
                 <pre><code class="language-javascript">
 
 
@@ -223,47 +232,53 @@
                     // and an even-shorter-hand for adding or subtracting 1
                     someVar++; // now someVar is 101
                     someVar--; // back to 100
-
-                    // Arrays are ordered lists of values, of any type.
-                    var myArray = ["Hello", 45, true];
-
-                    // Their members can be accessed using the square-brackets subscript syntax.
-                    // Array indices start at zero.
-                    myArray[1]; // = 45
-
-                    // Arrays are mutable and of variable length.
-                    myArray.push("World");
-                    myArray.length; // = 4
-
-                    // Add/Modify at specific index
-                    myArray[3] = "Hello";
-
-                    // JavaScript's objects are equivalent to "dictionaries" or "maps" in other
-                    // languages: an unordered collection of key-value pairs.
-                    var myObj = {key1: "Hello", key2: "World"};
-
-                    // Keys are strings, but quotes aren't required if they're a valid
-                    // JavaScript identifier. Values can be any type.
-                    var myObj = {myKey: "myValue", "my other key": 4};
-
-                    // Object attributes can also be accessed using the subscript syntax,
-                    myObj["my other key"]; // = 4
-
-                    // ... or using the dot syntax, provided the key is a valid identifier.
-                    myObj.myKey; // = "myValue"
-
-                    // Objects are mutable; values can be changed and new keys added.
-                    myObj.myThirdKey = true;
-
-                    // If you try to access a value that's not yet set, you'll get undefined.
-                    myObj.myFourthKey; // = undefined
-
-            </code></pre>
+                </code></pre>
+    </div>
     </div>
 </div>
-
 <div class="row">
     <div class="col-md-6">
+        <h5 id="Arrays"><span class="inlineCode" style="font-size:22px;">Arrays</span></h5>
+         <pre><code class="language-javascript">
+
+             // Arrays are ordered lists of values, of any type.
+             var myArray = ["Hello", 45, true];
+
+             // Their members can be accessed using the square-brackets subscript syntax.
+             // Array indices start at zero.
+             myArray[1]; // = 45
+
+             // Arrays are mutable and of variable length.
+             myArray.push("World");
+             myArray.length; // = 4
+
+             // Add/Modify at specific index
+             myArray[3] = "Hello";
+
+             // JavaScript's objects are equivalent to "dictionaries" or "maps" in other
+             // languages: an unordered collection of key-value pairs.
+             var myObj = {key1: "Hello", key2: "World"};
+
+             // Keys are strings, but quotes aren't required if they're a valid
+             // JavaScript identifier. Values can be any type.
+             var myObj = {myKey: "myValue", "my other key": 4};
+
+             // Object attributes can also be accessed using the subscript syntax,
+             myObj["my other key"]; // = 4
+
+             // ... or using the dot syntax, provided the key is a valid identifier.
+             myObj.myKey; // = "myValue"
+
+             // Objects are mutable; values can be changed and new keys added.
+             myObj.myThirdKey = true;
+
+             // If you try to access a value that's not yet set, you'll get undefined.
+             myObj.myFourthKey; // = undefined
+
+         </code></pre>
+    </div>
+    <div class="col-md-6">
+        <h5 id="control"><span class="inlineCode" style="font-size:22px;">Control Structures</span></h5>
                 <pre><code class="language-javascript">
 
 
@@ -333,7 +348,11 @@
 
                 </code></pre>
     </div>
+</div>
+
+<div class="row">
     <div class="col-md-6">
+        <h5 id="Arrays"><span class="inlineCode" style="font-size:22px;">Functions</span></h5>
                 <pre><code class="language-javascript">
 
 
@@ -414,10 +433,9 @@
 
                 </code></pre>
     </div>
-</div>
-<div class="row">
+
     <div class="col-md-6">
-        <h5 id=""></h5>
+        <h5 id="objects"><span class="inlineCode" style="font-size:22px;">Objects</span></h5>
                 <pre><code class="language-javascript">
 
 
@@ -603,31 +621,33 @@
     </div>
 </div>
 <br>
-<h3 id="functions">Functions</h3>
+
+    <h5 id="FunctionScope"><span class="inlineCode" style="font-size:22px;">Function Scope</span></h5>
+
 <div class="row">
     <div class="col-md-4">
                 <pre><code class="language-javascript">
                     var foo = 1;
                     function bar() {
-                      if (!foo) {
-                        var foo = 10;
-                      }
-                      alert(foo);
+                    if (!foo) {
+                    var foo = 10;
+                    }
+                    alert(foo);
                     }
                     bar();
                 </code>
                 </pre>
 
     </div>
-    <div class="col-md-6"><p>foo = 1 is outside the class.  Returns 10</p></div>
+    <div class="col-md-6"><p>foo = 1 is outside the class. Returns 10</p></div>
 </div>
 <div class="row">
     <div class="col-md-4">
                 <pre><code class="language-javascript">
                     var a = 1;
                     function b() {
-                      a = 10;
-                      return;
+                    a = 10;
+                    return;
                     function a() {}
                     }
                     b();
@@ -636,7 +656,11 @@
                 </pre>
 
     </div>
-    <div class="col-md-6"><p>Here, of course, the browser will alert “1”. So what’s going on here? While it might seem strange, dangerous, and confusing, this is actually a powerful and expressive feature of the language. I don’t know if there is a standard name for this specific behavior, but I’ve come to like the term “hoisting”. This article will try to shed some light on this mechanism, but first lets take a necessary detour to understand JavaScript’s scoping.</p></div>
+    <div class="col-md-6"><p>Here, of course, the browser will alert “1”. So what’s going on here? While it might seem
+        strange, dangerous, and confusing, this is actually a powerful and expressive feature of the language. I don’t
+        know if there is a standard name for this specific behavior, but I’ve come to like the term “hoisting”. This
+        article will try to shed some light on this mechanism, but first lets take a necessary detour to understand
+        JavaScript’s scoping.</p></div>
 </div>
 <div class="row">
     <div class="col-md-4">
@@ -644,7 +668,7 @@
                     var x = 1;
                     console.log(x); // 1
                     if (true) {
-                      var x = 2;
+                    var x = 2;
                     console.log(x); // 2
                     }
                     console.log(x); // 2
@@ -653,10 +677,10 @@
                     function foo() {
                     var x = 1;
                     if (x) {
-                      (function () {
-                        var x = 2;
+                    (function () {
+                    var x = 2;
                     // some other code
-                      }());
+                    }());
                     }
                     // x is still 1.
                     }
@@ -664,7 +688,8 @@
                 </pre>
 
     </div>
-    <div class="col-md-6"><p>Will output 1,2,2 as shown.  Blocks in js do not create new scope!! Important - this is called function level scope.  Only functions create a new scope!</p></div>
+    <div class="col-md-6"><p>Will output 1,2,2 as shown. Blocks in js do not create new scope!! Important - this is
+        called function level scope. Only functions create a new scope!</p></div>
 </div>
 <div class="row">
     <div class="col-md-4">
@@ -684,9 +709,12 @@
                 </pre>
 
     </div>
-    <div class="col-md-6"><p>Function declarations and variable declarations are always moved (“hoisted”) invisibly to the top of their containing scope by the JavaScript interpreter. Function parameters and language-defined names are, obviously, already there.</p></div>
+    <div class="col-md-6"><p>Function declarations and variable declarations are always moved (“hoisted”) invisibly to
+        the top of their containing scope by the JavaScript interpreter. Function parameters and language-defined names
+        are, obviously, already there.</p></div>
 </div>
-<h3 id="fizzBuzz">FizzBuzz</h3>
+    <h5 id="fizzBuzz"><span class="inlineCode" style="font-size:22px;">FizzBuzz</span></h5>
+
 <div class="row">
     <div class="col-md-4"><pre><code class="language-javascript">
         console.log("array apply",
@@ -730,18 +758,36 @@
     </code></pre>
     </div>
 </div>
-<h3 id="refactor">FizzBuzz Refactor</h3>
+    <h5 id="refactor"><span class="inlineCode" style="font-size:22px;">FizzBuzz Refactor</span></h5>
 <section class="refactor">
     <div class="row">
         <div class="col-md-4">
             <h5><em>Steps for this program</em></h5>
             <ul>
-                <li>When the page loads, the user should be prompted to supply a number. The easiest way to do this would be with the prompt() function, but you should also feel free to create a simple text input with text telling the user to input a number.</li>
-                <li>You’ll need to write one named function that takes an integer as argument, and then counts from 1 to the argument value, substituting “fizz”, “buzz”, and “fizzbuzz” accordingly.</li>
-                <li>You’ll need to convert the value the user supplies from a string to a number. Remember that the value that you get from prompt() or the val() on your form will by default be a string. To convert this to an integer you can use the + operator to convert a string to an integer. For instance, if you had the string “22”, you could convert that to a number with +”22”.</li>
-                <li>Note that if you try to convert something like "this is a string" to an integer with +"this is a string", it will evaluate to NaN. Your app should ensure that the user supplied value does not evaluate to NaN. If it does, you should supply a message telling them they need to supply a number.</li>
-                <li>Optionally, you can also write code to ensure that the user has not supplied a decimal value. For an easy way to do this, check out <a href="http://stackoverflow.com/questions/2304052/check-if-a-number-has-a-decimal-place-is-a-whole-number/2304062#2304062" alt="" target="_blank">this answer</a> on Stack Overflow.</li>
-                <li><strong>DO NOT</strong> spend any time thinking about design for this app. Like the first version, the goal here is not to create a pretty app, but instead to hone your JavaScript skills.</li>
+                <li>When the page loads, the user should be prompted to supply a number. The easiest way to do this
+                    would be with the prompt() function, but you should also feel free to create a simple text input
+                    with text telling the user to input a number.
+                </li>
+                <li>You’ll need to write one named function that takes an integer as argument, and then counts from 1 to
+                    the argument value, substituting “fizz”, “buzz”, and “fizzbuzz” accordingly.
+                </li>
+                <li>You’ll need to convert the value the user supplies from a string to a number. Remember that the
+                    value that you get from prompt() or the val() on your form will by default be a string. To convert
+                    this to an integer you can use the + operator to convert a string to an integer. For instance, if
+                    you had the string “22”, you could convert that to a number with +”22”.
+                </li>
+                <li>Note that if you try to convert something like "this is a string" to an integer with +"this is a
+                    string", it will evaluate to NaN. Your app should ensure that the user supplied value does not
+                    evaluate to NaN. If it does, you should supply a message telling them they need to supply a number.
+                </li>
+                <li>Optionally, you can also write code to ensure that the user has not supplied a decimal value. For an
+                    easy way to do this, check out <a
+                            href="http://stackoverflow.com/questions/2304052/check-if-a-number-has-a-decimal-place-is-a-whole-number/2304062#2304062"
+                            alt="" target="_blank">this answer</a> on Stack Overflow.
+                </li>
+                <li><strong>DO NOT</strong> spend any time thinking about design for this app. Like the first version,
+                    the goal here is not to create a pretty app, but instead to hone your JavaScript skills.
+                </li>
             </ul>
         </div>
         <div class="col-md-8">
@@ -755,7 +801,8 @@
     </div>
 
 </section>
-<h3 id="#truthiness">Truthiness</h3>
+    <h5 id="truthiness"><span class="inlineCode" style="font-size:22px;">Truthiness</span></h5>
+
 <div class="row">
     <div class="col-md-12">
         <div class="col-md-4">
@@ -773,8 +820,15 @@
         </div>
         <div class="col-md-8">
             <ul>
-                <li>When we say that a value is <span class="inlineCode">"truthy"</span> in JavaScript, we don't just mean that the value is <span class="inlineCode">true</span>. Rather, what we mean is that the value coerces to <span class="inlineCode">true</span> when evaluated  in a <span class="inlineCode">boolean</span> context.</li>
-                <li>There are a lot of <span class="inlineCode">truthy</span> values in JavaScript. And there are many more than could be listed here. On the other side, though, there are only six <span class="inlineCode">falsy</span> values.</li>
+                <li>When we say that a value is <span class="inlineCode">"truthy"</span> in JavaScript, we don't just
+                    mean that the value is <span class="inlineCode">true</span>. Rather, what we mean is that the value
+                    coerces to <span class="inlineCode">true</span> when evaluated in a <span
+                            class="inlineCode">boolean</span> context.
+                </li>
+                <li>There are a lot of <span class="inlineCode">truthy</span> values in JavaScript. And there are many
+                    more than could be listed here. On the other side, though, there are only six <span
+                            class="inlineCode">falsy</span> values.
+                </li>
             </ul>
         </div>
         </pre></div>
