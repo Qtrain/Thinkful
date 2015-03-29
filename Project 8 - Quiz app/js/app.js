@@ -9,9 +9,22 @@ $(document).ready(function(){
     });
 
     /*--- Hide information modal box ---*/
-    $("a.close").click(function(){
+    $("button.close").click(function(){
         $(".overlay").fadeOut(1000);
     });
+
+    $(".new").click(function(){
+        location.reload();
+    });
+
+    function sleep(milliseconds) {
+        var start = new Date().getTime();
+        for (var i = 0; i < 1e7; i++) {
+            if ((new Date().getTime() - start) > milliseconds){
+                break;
+            }
+        }
+    }
 
 
     var quiz = [{
@@ -69,7 +82,7 @@ $(document).ready(function(){
         }
 
         // load the question
-        questionContainer.textContent = "Q" + (currentQuestion + 1) + ". " +
+        questionContainer.textContent = "Question " + (currentQuestion + 1) + ": " +
         quiz[currentQuestion].question;
 
         // load the choices
@@ -110,6 +123,7 @@ $(document).ready(function(){
             if (userpick == quiz[currentQuestion].correct) {
                 score++;
                 labelStyle.color = "green";
+                submitBtn.click();
             } else {
                 labelStyle.color = "red";
             }
@@ -132,10 +146,22 @@ $(document).ready(function(){
     }
 
     function showFinalResults() {
-        content.innerHTML = "<h2>You've complited the quiz!</h2>" +
-        "<h2>Below are your results:</h2>" +
-        "<h2>" + score + " out of " + quiz.length + " questions, " +
-        Math.round(score / quiz.length * 100) + "%<h2>";
+        var percentage = Math.round(score / quiz.length * 100);
+
+        if (percentage < 60){
+            content.innerHTML = "<h2>You are fucking dumb, mate! No tits for you!  Try again!</h2>"+
+            "<h2>Below are your results:</h2>" +
+            "<h2>" + score + " out of " + quiz.length + " questions, " +
+            Math.round(score / quiz.length * 100) + "%<h2>";
+        }
+        else{
+            content.innerHTML = "<h2>You've completed the quiz!</h2>" +
+            "<h2>" + score + " out of " + quiz.length + " questions, " +
+            Math.round(score / quiz.length * 100) + "<br>" + " Now, here are some tits!";
+            $(".container").fadeOut(5000);
+            $(".quiz").append('<p style="margin: 500px"></p>')
+
+        }
     }
 
     window.addEventListener("load", askQuestion, false);
