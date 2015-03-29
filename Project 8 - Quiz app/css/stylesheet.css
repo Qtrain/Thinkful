@@ -9,7 +9,9 @@
 }
 
 body{
-    background: green;
+    background-image: url("http://static.giantbomb.com/uploads/original/7/71263/1836880-test_your_might.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 a{
@@ -19,8 +21,7 @@ a{
 nav {
     position: relative;
     height: 10%;
-    padding: 10em;
-    display: inline;
+    padding: 7em;
 }
 
 nav ul li {
@@ -35,20 +36,32 @@ nav ul li:first-child {
 }
 
 nav ul li:last-child {
-    margin-top: -80px;
     float: right;
 }
 
 nav a {
 
-    color: #fff;
+    color: darkred;
+
+    font-weight: bold;
+    font-size: 49px;
+    text-shadow: 1px 1px 1px #fff;;
+}
+
+div > p{
+    padding: 30px;
+}
+
+.close{
+    text-align: center;
 }
 
 .overlay {
     width: 100%;
     height: 100%;
     color: #fff;
-    background: #e74c3c;
+    background-image: url("http://www.gameinformer.com/cfs-filesystemfile.ashx/__key/CommunityServer-Components-ImageFileViewer/CommunityServer-Blogs-Components-WeblogFiles-00-00-00-00-09/2604.spinerip.jpg_2D00_610x0.jpg");
+    backround-size: cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -70,18 +83,19 @@ nav a {
 }
 
 .quiz{
-    width: 1000px;
-    align-self: center;
-    padding: 100px;
+    width: 40%;
+    margin-right: 3em;
+    padding: 50px;
+    float: right;
     border: 2px dotted gray;
-    margin: 0 auto;
-    /* text-align: center; */
-    background-color: lightslategrey;
+    background-image: url("http://boobs.sexpeck.com/wp-content/uploads/2014/04/xpov-huge-naked-asian-tits-flashing.-boobs.sexpeck.com-230782.jpg.pagespeed.ic.lXOXYlxdW7.jpg");
+    background-size: cover;
     box-shadow: 0px 1px 30px #fff;
 
 }
 
 .container{
+    margin-top: 15em;
     width: auto;
     box-sizing: border-box;
     background: none repeat scroll 0% 0% #F5F5F5;
