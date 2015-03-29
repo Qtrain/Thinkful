@@ -29,5 +29,6 @@
 
 <h3>Project 6 - Javascript</h3>
 <p>Created static site detailing the foundations of javascript.  Includes fizzBuzz exercise</p>
-<h5>To-Do</h5>
-- fizzBuzz refactor
+
+<h3>Project 7 - Hot or Cold app</h3>
+<p>App is a single page site that uses an input text box to play a number guessing game.  The user is prompted to guess a number between 1 and 100.  App uses jquery, javascript and static files cloned from https://github.com/thinkful-fewd/hot-or-cold-starter
