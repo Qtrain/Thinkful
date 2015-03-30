@@ -15,6 +15,11 @@
     <!-- JavaScript -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src=" js/app.js"></script>
+    <script>
+        $('#animatedElement').click(function() {
+            $(this).addClass("slideUp");
+        });
+    </script>
 
 </head>
 <body>
@@ -24,8 +29,8 @@
     <!-- Top Navigation -->
     <nav>
         <ul class="clearfix">
-            <li><a class="what" href="#">What ?</a></li>
-            <li><a class="new" href="#">+ New Quiz</a></li>
+            <li><button class="what" href="#">Wut ?</button></li>
+            <li><button class="new" href="#">+ New Quiz</button></li>
         </ul>
     </nav>
 
@@ -43,9 +48,12 @@
 
 </header>
 
+
+
 <section class="quiz"> <!-- guessing section -->
 
     <div class="container">
+        <h1>Pass the quiz and see some tits!</h1>
         <div id="stuff">
             <h3 id="question"></h3>
 

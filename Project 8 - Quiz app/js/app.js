@@ -149,17 +149,19 @@ $(document).ready(function(){
         var percentage = Math.round(score / quiz.length * 100);
 
         if (percentage < 60){
-            content.innerHTML = "<h2>You are fucking dumb, mate! No tits for you!  Try again!</h2>"+
+            content.innerHTML = "<h2>Oi!  What the hell was that, mate? No tits for you! Try again!</h2>"+
             "<h2>Below are your results:</h2>" +
             "<h2>" + score + " out of " + quiz.length + " questions, " +
             Math.round(score / quiz.length * 100) + "%<h2>";
         }
         else{
+            $("h1").remove();
             content.innerHTML = "<h2>You've completed the quiz!</h2>" +
             "<h2>" + score + " out of " + quiz.length + " questions, " +
             Math.round(score / quiz.length * 100) + "<br>" + " Now, here are some tits!";
             $(".container").fadeOut(5000);
             $(".quiz").append('<p style="margin: 500px"></p>')
+            $("body").css('background-image', 'url("http://media.giphy.com/media/IjmMzurYulKEw/giphy.gif")');
 
         }
     }
