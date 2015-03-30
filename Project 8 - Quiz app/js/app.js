@@ -28,28 +28,44 @@ $(document).ready(function(){
 
 
     var quiz = [{
-        "question": "What is the full form of IP?",
-        "choices": ["Internet Provider", "Internet Port", "Internet Protocol"],
-        "correct": "Internet Protocol"
+        "question": "How would we use css to select an element with <h1 class = \"intro\">",
+        "choices": [".intro{ property: attribute }", "intro{ property :attribute }", "#intro{property: attribute }"],
+        "correct": ".intro{ property: attribute }"
     }, {
-        "question": "Who is the founder of Microsoft?",
-        "choices": ["Bill Gates", "Steve Jobs", "Steve Wozniak"],
-        "correct": "Bill Gates"
+        "question": "How would we select the element with id firstname <p id=\"firstname\">?",
+        "choices": ["#firstname{ property: attribute }", ".firstname{ property: attribute }", "who fucking cares?"],
+        "correct": "#firstname{ property: attribute }"
     }, {
-        "question": "1 byte = ?",
-        "choices": ["8 bits", "64 bits", "1024 bits"],
-        "correct": "8 bits"
+        "question": "How would we select all elements?",
+        "choices": ["#{ property: attribute }",  "@all{ property: attribute }", "*{ property: attribute }"],
+        "correct": "*{ property: attribute }"
     }, {
-        "question": "The C programming language was developed by?",
-        "choices": ["Brendan Eich", "Dennis Ritchie", "Guido van Rossum"],
-        "correct": "Dennis Ritchie"
+        "question": "what does this do div > p?",
+        "choices": ["Selects all <p> elements inside <div> elements", "Selects <p> element that is a child of <div>", "Selects all <p> that are placed immediately after <div>"],
+        "correct": "Selects <p> element that is a child of <div>"
     }, {
-        "question": "What does CC mean in emails?",
-        "choices": ["Carbon Copy", "Creative Commons", "other"],
-        "correct": "Carbon Copy"
+        "question": "what does div + p do?",
+        "choices": ["Selects all <div> and <p> elements", "Selects all <p> elements inside <div> elements", "Selects all <p> elements that are placed immediately after <div> elements"],
+        "correct": "Selects all <p> elements that are placed immediately after <div> elements"
     }];
 
 
+    function escapeHtmlChars(unsafe) {
+        return unsafe
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#039;");
+    }
+
+    for (var i = 0; i < quiz.length; i++) {
+        quiz[i].correct = escapeHtmlChars(quiz[i].correct);
+
+        for (var j = 0; j < quiz[i].choices.length; j++) {
+            quiz[i].choices[j] = escapeHtmlChars(quiz[i].choices[j]);
+        }
+    }
 
 
 // define elements
@@ -156,11 +172,11 @@ $(document).ready(function(){
         }
         else{
             $("h1").remove();
-            content.innerHTML = "<h2>You've completed the quiz!</h2>" +
+            content.innerHTML = "<h2>Great Job!</h2>" +
             "<h2>" + score + " out of " + quiz.length + " questions, " +
-            Math.round(score / quiz.length * 100) + "<br>" + " Now, here are some tits!";
+            Math.round(score / quiz.length * 100) + "%!" + "<br>" + " Now, here are some tits!";
             $(".container").fadeOut(5000);
-            $(".quiz").append('<p style="margin: 500px"></p>')
+            $(".quiz").append('<p style="margin: 500px"></p>');
             $("body").css('background-image', 'url("http://media.giphy.com/media/IjmMzurYulKEw/giphy.gif")');
 
         }
