@@ -2,53 +2,51 @@
  * Created by qtrain on 3/29/15.
  */
 
-$(document).ready(function(){
+$(document).ready(function () {
 
-    $(".what").click(function(){
+    $(".what").click(function () {
         $(".overlay").fadeIn(1000);
     });
 
     /*--- Hide information modal box ---*/
-    $("button.close").click(function(){
+    $("button.close").click(function () {
         $(".overlay").fadeOut(1000);
     });
 
-    $(".new").click(function(){
+    $(".new").click(function () {
         location.reload();
     });
 
     function sleep(milliseconds) {
         var start = new Date().getTime();
         for (var i = 0; i < 1e7; i++) {
-            if ((new Date().getTime() - start) > milliseconds){
+            if ((new Date().getTime() - start) > milliseconds) {
                 break;
             }
         }
     }
 
-
     var quiz = [{
-        "question": "How would we use css to select an element with <h1 class = \"intro\">",
-        "choices": [".intro{ property: attribute }", "intro{ property :attribute }", "#intro{property: attribute }"],
-        "correct": ".intro{ property: attribute }"
+        "question": "what does this do div > p?",
+        "choices": ["Selects all <p> elements inside <div> elements", "Selects <p> element that is a child of <div>", "Selects all <p> that are placed immediately after <div>"],
+        "correct": "Selects <p> element that is a child of <div>"
     }, {
         "question": "How would we select the element with id firstname <p id=\"firstname\">?",
         "choices": ["#firstname{ property: attribute }", ".firstname{ property: attribute }", "who fucking cares?"],
         "correct": "#firstname{ property: attribute }"
     }, {
         "question": "How would we select all elements?",
-        "choices": ["#{ property: attribute }",  "@all{ property: attribute }", "*{ property: attribute }"],
+        "choices": ["#{ property: attribute }", "@all{ property: attribute }", "*{ property: attribute }"],
         "correct": "*{ property: attribute }"
     }, {
-        "question": "what does this do div > p?",
-        "choices": ["Selects all <p> elements inside <div> elements", "Selects <p> element that is a child of <div>", "Selects all <p> that are placed immediately after <div>"],
-        "correct": "Selects <p> element that is a child of <div>"
+        "question": "How would we use css to select an element with <h1 class = \"intro\">",
+        "choices": [".intro{ property: attribute }", "intro{ property :attribute }", "#intro{property: attribute }"],
+        "correct": ".intro{ property: attribute }"
     }, {
         "question": "what does div + p do?",
         "choices": ["Selects all <div> and <p> elements", "Selects all <p> elements inside <div> elements", "Selects all <p> elements that are placed immediately after <div> elements"],
         "correct": "Selects all <p> elements that are placed immediately after <div> elements"
     }];
-
 
     function escapeHtmlChars(unsafe) {
         return unsafe
@@ -60,7 +58,7 @@ $(document).ready(function(){
     }
 
     for (var i = 0; i < quiz.length; i++) {
-        quiz[i].correct = escapeHtmlChars(quiz[i].correct);
+       /* quiz[i].correct = escapeHtmlChars(quiz[i].correct);*/
 
         for (var j = 0; j < quiz[i].choices.length; j++) {
             quiz[i].choices[j] = escapeHtmlChars(quiz[i].choices[j]);
@@ -81,9 +79,9 @@ $(document).ready(function(){
         askingQuestion = true;
 
     /* --
-    function $(id) { // shortcut for document.getElementById
-        return document.getElementById(id);
-    } -- */
+     function $(id) { // shortcut for document.getElementById
+     return document.getElementById(id);
+     } -- */
 
     function askQuestion() {
         var choices = quiz[currentQuestion].choices,
@@ -164,13 +162,13 @@ $(document).ready(function(){
     function showFinalResults() {
         var percentage = Math.round(score / quiz.length * 100);
 
-        if (percentage < 60){
-            content.innerHTML = "<h2>Oi!  What the hell was that, mate? No tits for you! Try again!</h2>"+
+        if (percentage < 60) {
+            content.innerHTML = "<h2>Oi!  What the hell was that, mate? No tits for you! Try again!</h2>" +
             "<h2>Below are your results:</h2>" +
             "<h2>" + score + " out of " + quiz.length + " questions, " +
             Math.round(score / quiz.length * 100) + "%<h2>";
         }
-        else{
+        else {
             $("h1").remove();
             content.innerHTML = "<h2>Great Job!</h2>" +
             "<h2>" + score + " out of " + quiz.length + " questions, " +
@@ -184,7 +182,6 @@ $(document).ready(function(){
 
     window.addEventListener("load", askQuestion, false);
     submitBtn.addEventListener("click", checkAnswer, false);
-
 
 
 });

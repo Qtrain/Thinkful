@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d85a3119-72a8-4ca1-a5b1-0570610f1fb1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project 8 - Quiz app/js/app.js" afterPath="$PROJECT_DIR$/Project 8 - Quiz app/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project 8 - Quiz app/css/stylesheet.css" afterPath="$PROJECT_DIR$/Project 8 - Quiz app/css/stylesheet.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Thinkful.iws" />
@@ -58,12 +57,40 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Project 8 - Quiz app/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6903226">
-              <caret line="58" column="28" selection-start-line="29" selection-start-column="3" selection-end-line="67" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.33333334">
+              <caret line="128" column="26" selection-start-line="128" selection-start-column="26" selection-end-line="128" selection-end-column="26" />
               <folding>
-                <marker date="1427734274262" expanded="true" signature="6673:6686" placeholder="..." />
+                <marker date="1427747161322" expanded="true" signature="6685:6698" placeholder="..." />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="onloadwff.js" pinned="false" current-in-tab="false">
+        <entry file="mock://chrome-extension://hdokiejnpimakedhajhdlcegeplioahd/onloadwff.js">
+          <provider selected="true" editor-type-id="vmFileEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="frontend.js" pinned="false" current-in-tab="false">
+        <entry file="mock://chrome-extension://cejmhmbmafamjegaebkjhnckhepgmido/javascript/frontend.js">
+          <provider selected="true" editor-type-id="vmFileEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.min.js" pinned="false" current-in-tab="false">
+        <entry file="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+          <provider selected="true" editor-type-id="httpFileEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adblock_start_common.js" pinned="false" current-in-tab="false">
+        <entry file="mock://chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/adblock_start_common.js">
+          <provider selected="true" editor-type-id="vmFileEditor">
+            <state />
           </provider>
         </entry>
       </file>
@@ -80,7 +107,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project 8 - Quiz app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="12.0">
+            <state vertical-scroll-proportion="-2.0">
               <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
@@ -133,7 +160,23 @@
         <option value="$PROJECT_DIR$/Project 7 - Hot or Cold App/js/app.js" />
         <option value="$PROJECT_DIR$/Project 8 - Quiz app/index.html" />
         <option value="$PROJECT_DIR$/Project 8 - Quiz app/css/stylesheet.css" />
+        <option value="ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" />
+        <option value="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content/init.js" />
+        <option value="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content/evernote.js" />
+        <option value="chrome-extension://chlffgpmiacpedhhbkiomidkjlcfhogd/content-script.js" />
+        <option value="chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/uiscripts/blacklisting/rightclick_hook.js" />
+        <option value="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/third_party/port.js" />
+        <option value="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/js/common/Browser.js" />
+        <option value="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content/frame_loader.js" />
+        <option value="chrome-extension://chklaanhfefbnpoihckbnefhakgolnmc/content.js" />
+        <option value="chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/adblock_start_common.js" />
+        <option value="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/skitch/js/skitch.js" />
+        <option value="chrome-extension://eakacpaijcpapndcfffdgphdiccmpknp/scripts/jquery.js" />
+        <option value="chrome-extension://gmbgaklkmjakoegficnlkhebmhkjfich/lib/jquery.min.js" />
+        <option value="extensions::messaging" />
+        <option value="chrome-extension://cejmhmbmafamjegaebkjhnckhepgmido/javascript/frontend.js" />
         <option value="$PROJECT_DIR$/Project 8 - Quiz app/js/app.js" />
+        <option value="chrome-extension://hdokiejnpimakedhajhdlcegeplioahd/onloadwff.js" />
       </list>
     </option>
   </component>
@@ -145,10 +188,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1414" />
+    <option name="x" value="48" />
     <option name="y" value="-4" />
-    <option name="width" value="1873" />
-    <option name="height" value="1085" />
+    <option name="width" value="1319" />
+    <option name="height" value="773" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -370,7 +413,8 @@
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
     <property name="LayoutCode.rearrangeEntriesJavaScript 1.5" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Project 8 - Quiz app/js" />
+    <property name="restartRequiresConfirmation" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -384,13 +428,16 @@
       <recent name="$PROJECT_DIR$/Project 6 - Javascript/js" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.functions.js">
+  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
     <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Thinkful/Project 1 - Intro Site/index.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="functions.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="/usr/local/bin/node" path-to-js-file="functions.js" working-dir="$PROJECT_DIR$/playground">
+    <configuration default="false" name="index.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Thinkful/Project 8 - Quiz app/index.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="functions.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="/usr/local/bin/node" path-to-js-file="functions.js" working-dir="$PROJECT_DIR$/Project 8 - Quiz app/js">
       <RunnerSettings RunnerId="Basic" />
       <ConfigurationWrapper RunnerId="Basic" />
       <method />
@@ -433,14 +480,16 @@
       <envs />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.functions.js" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.functions.js" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.functions.js" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.functions.js" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -458,16 +507,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1414" y="-4" width="1873" height="1085" extended-state="6" />
+    <frame x="48" y="-4" width="1319" height="773" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17508055" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.175" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47802198" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5925926" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3271605" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -493,17 +542,19 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Project 8 - Quiz app/js/app.js</url>
+          <line>112</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="3" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Project 4 - StreetFighter/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Project 1 - Intro Site/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -844,18 +895,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project 8 - Quiz app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="12.0">
+        <state vertical-scroll-proportion="-2.0">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+      <provider selected="true" editor-type-id="httpFileEditor">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Project 8 - Quiz app/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6903226">
-          <caret line="58" column="28" selection-start-line="29" selection-start-column="3" selection-end-line="67" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="128" column="26" selection-start-line="128" selection-start-column="26" selection-end-line="128" selection-end-column="26" />
           <folding>
-            <marker date="1427734274262" expanded="true" signature="6673:6686" placeholder="..." />
+            <marker date="1427747161322" expanded="true" signature="6685:6698" placeholder="..." />
           </folding>
         </state>
       </provider>
