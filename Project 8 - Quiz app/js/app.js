@@ -26,14 +26,15 @@ $(document).ready(function () {
         }
     }
 
+
     var quiz = [{
         "question": "what does this do div > p?",
         "choices": ["Selects all <p> elements inside <div> elements", "Selects <p> element that is a child of <div>", "Selects all <p> that are placed immediately after <div>"],
         "correct": "Selects <p> element that is a child of <div>"
     }, {
-        "question": "How would we select the element with id firstname <p id=\"firstname\">?",
-        "choices": ["#firstname{ property: attribute }", ".firstname{ property: attribute }", "who fucking cares?"],
-        "correct": "#firstname{ property: attribute }"
+     "question": "What is information processing theory",
+     "choices": ["provide model that help psychologists understand the processes involved in memory.", "to provide models that help psychologists understand the processes involved in learning.", "provide models that help psychologists understand the processes involved in infant learning."],
+     "correct": "makes use of modern computer science and related fields to provide models that help psychologists understand the processes involved in memory."
     }, {
         "question": "How would we select all elements?",
         "choices": ["#{ property: attribute }", "@all{ property: attribute }", "*{ property: attribute }"],
@@ -48,6 +49,113 @@ $(document).ready(function () {
         "correct": "Selects all <p> elements that are placed immediately after <div> elements"
     }];
 
+/*
+    var quiz = [{
+        "question": "What is information processing theory",
+        "choices": ["provide model that help psychologists understand the processes involved in memory.", "to provide models that help psychologists understand the processes involved in learning.", "provide models that help psychologists understand the processes involved in infant learning."],
+        "correct": "makes use of modern computer science and related fields to provide models that help psychologists understand the processes involved in memory."
+}, {
+    "question": "What are the three distinct processes of memory.",
+    "choices": ["encoding storage and retrieval", "encoding processing and retrieval", "encoding storage and learning"],
+    "correct": "encoding storage and retrieval"
+}, {
+    "question": "What is encoding",
+    "choices": ["information stored in memory is brought to mind", "the transformation of information into a form that can be stored in memory", "keeping or maintaining information in memory"],
+    "correct": "the transformation of information into a form that can be stored in memory"
+}, {
+    "question": "what is storage",
+    "choices": ["keeping or maintaining information in memory", "information stored in memory is brought to mind", "keeping or maintaining information in memory"],
+    "correct": "keeping or maintaining information in memory"
+}, {
+    "question": "what is retreival",
+    "choices": ["information stored in memory is brought to mind", "keeping or maintaining information in memory", "the cognitive process that includes encoding storage and retrieval"],
+    "correct": "information stored in memory is brought to mind"
+}, {
+    "question": "what is memory",
+    "choices": ["information stored in memory is brought to mind", "keeping or maintaining information in memory", "the cognitive process that includes encoding storage and retrieval"],
+    "correct": "the cognitive process that includes encoding storage and retrieval"
+}, {
+    "question": "what is sensory memory",
+    "choices": ["information stored in memory is brought to mind", "Virtually everything we see, hear, or otherwise sense that is stored for a brief period of time", "the cognitive process that includes encoding storage and retrieval"],
+    "correct": "Virtually everything we see, hear, or otherwise sense that is stored for a brief period of time"
+}, {
+    "question": "what is sensory memory",
+    "choices": ["information stored in memory is brought to mind", "Virtually everything we see, hear, or otherwise sense that is stored for a brief period of time", "the cognitive process that includes encoding storage and retrieval"],
+    "correct": "Virtually everything we see, hear, or otherwise sense that is stored for a brief period of time"
+}, {
+    "question": "what is displacement",
+    "choices": ["when you repeat something over and over to yourself", "Virtually everything we see, hear, or otherwise sense that is stored for a brief period of time", "short term memory is limited so each new incoming item pushes out an existing item which is fogotten"],
+    "correct": "Virtually everything we see, hear, or otherwise sense that is stored for a brief period of time"
+}, {
+    "question": "what is rehearsal",
+    "choices": ["when you repeat something over and over to yourself", "Virtually everything we see, hear, or otherwise sense that is stored for a brief period of time", "short term memory is limited so each new incoming item pushes out an existing item which is fogotten"],
+    "correct": "Virtually everything we see, hear, or otherwise sense that is stored for a brief period of time"
+}, {
+    "question": "what is chunking",
+    "choices": ["when you repeat something over and over to yourself", "organizing and grouping information into larger units", "organizing information into smaller units"],
+    "correct": "organizing and grouping information into larger units"
+}, {
+    "question": "what is working memory",
+    "choices": ["the part of the memory which processes thoughts", "the temporary storage structures of the brain", "memory used to process thoughts"],
+    "correct": "the temporary storage structures of the brain"
+}, {
+    "question": "what is the difference between maintenance reherasal and elaborative rehearsal",
+    "choices": ["M.R. is repeating something to retain it elaborative is relating new info", "the temporary storage structures of the brain", "M.R. is relating new information and elaborative is repeating something to retain it"],
+    "correct":"M.R. is repeating something to retain it elaborative is relating new info"
+}, {
+    "question": "what is automaticity",
+    "choices": ["instantly knowing the time by simply glancing at the clock", "remembering your name and street address", "Virtually everything we see, hear, or otherwise sense that is stored for a brief period of time"],
+        "correct":"instantly knowing the time by simply glancing at the clock"
+}, {
+    "question": "what is declaritive memory",
+    "choices": ["it is part of long-term memory and stores facts and information", "remembering your name and street address", "Virtually everything we see, hear, or otherwise sense that is stored for a brief period of time"],
+        "correct":"it is part of long-term memory and stores facts and information"
+}, {
+    "question": "what is episodic memory",
+    "choices": ["a type of declaritive memory that records events as they have been subjectively experienced", "remembering your name and street address", "Virtually everything we see, hear, or otherwise sense that is stored for a brief period of time"],
+        "correct":"a type of declaritive memory that records events as they have been subjectively experienced"
+}, {
+    "question": "what is semantic memory",
+    "choices": ["type of declarative memory, is memory for general knowledge, or objective facts and information", "type of declaritive memory that records events as they have been subjectively experienced", "subsystem within long-term memory that stores procedures, motor skills, habits, and simple classically conditioned responses"],
+    "correct": "type of declarative memory, is memory for general knowledge, or objective facts and information"
+}, {
+    "question": "Which of the following is not one of the three basic memory processes?",
+    "choices": ["retreival", "decoding", "storage"],
+    "correct": "decoding"
+}, {
+    "question": "when information stored either before or after a given memory can hinder the ability to remember it",
+    "choices": ["interference", "decay", "brain farts"],
+    "correct": "interference"
+}, {
+    "question": "memories, if not used, fade with time and ultimately disappear entirely",
+    "choices": ["encoding theory", "pattern loss theory", "decay theory"],
+    "correct": "decay theory"
+}, {
+    "question": "________ is the physiological process by which encoded information is stored in memory",
+    "choices": ["Consolidation", "encoding", "assimilation"],
+    "correct": "Consolidation"
+}, {
+    "question": "While taking a test, you can’t remember the answer to a question that you are sure you know.",
+    "choices": ["Retrieval failure", "studying at 2am the night before", "encoding failure"],
+    "correct": "Retrieval failure"
+}, {
+    "question": "What brain structures are associated with memory?",
+    "choices": ["hippocampus", "frontal lobe", "anterior minor"],
+    "correct": "hippocampus"
+}, {
+    "question": "_______ amnesia is the inability to make new memories",
+    "choices": ["anterograde", "retrograde", "dementia"],
+    "correct": "anterograde"
+}, {
+    "question": "_______ amnesia is the inability to remember the past",
+    "choices": ["anterograde", "retrograde", "dementia"],
+    "correct": "retrograde"
+}, {
+    "question": "Everytime a subject does what you want they get a reward",
+    "choices": ["continuous reinforcment", "negative reinforcement", "positive reinforcement"],
+    "correct": "retrograde"
+}];
+*/
     function escapeHtmlChars(unsafe) {
         return unsafe
             .replace(/&/g, "&amp;")
@@ -174,7 +282,7 @@ $(document).ready(function () {
             "<h2>" + score + " out of " + quiz.length + " questions, " +
             Math.round(score / quiz.length * 100) + "%!" + "<br>" + " Now, here are some tits!";
             $(".container").fadeOut(5000);
-            $(".quiz").append('<p style="margin: 500px"></p>');
+            $(".quiz").append('<p style="margin: 1000px"></p>');
             $("body").css('background-image', 'url("http://media.giphy.com/media/IjmMzurYulKEw/giphy.gif")');
 
         }

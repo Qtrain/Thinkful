@@ -97,31 +97,45 @@ div > p{
     border: 1px solid rgba(0,0,0,0.1);
 }
 
+
+
 .quiz{
-    width: 40%;
-    margin-right: 3em;
-    padding: 50px;
-    float: right;
+    width: 60%;
+    padding: 25% 0em 1em;
+    margin: -7% auto;
     border: 2px dotted gray;
-    background-image: url("http://boobs.sexpeck.com/wp-content/uploads/2014/04/xpov-huge-naked-asian-tits-flashing.-boobs.sexpeck.com-230782.jpg.pagespeed.ic.lXOXYlxdW7.jpg");
+    align-content: center;
+     background-image: url("http://boobs.sexpeck.com/wp-content/uploads/2014/04/xpov-huge-naked-asian-tits-flashing.-boobs.sexpeck.com-230782.jpg.pagespeed.ic.lXOXYlxdW7.jpg");
+    background-color: green;
     background-size: cover;
     box-shadow: 0px 1px 30px #fff;
-
 }
 
 .container{
-    margin-top: 15em;
-    width: auto;
+    width: 50%;
     box-sizing: border-box;
     background: none repeat scroll 0% 0% #F5F5F5;
     border: 1px solid #CCC;
     border-radius: 4px;
     box-shadow: 0px 1px 3px #fff;
-    border: 3em;
-    padding: 100px;
-
+    margin: auto;
+    border: 8em;
+    padding: 5em;
 }
 
+.quizzes{
+    float: left;
+    width: 18%;
+    min-width: 17px;
+    margin-left: 3em;
+    padding: 2em;
+}
+
+#stuff{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50em;
+}
 /**************/
 .fadeIn{
     animation-name: fadeIn;
