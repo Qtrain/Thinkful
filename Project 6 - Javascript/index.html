@@ -33,7 +33,6 @@
         <div class="content">
             <ul class="links">
                 <li class="active">Home</li>
-                <li><a href="#functions">Syntax</a></li>
                 <li><a href="#fizzBuzz">FizzBuzz</a></li>
                 <li><a href="#refactor">FizzBuzzRefactor</a></li>
                 <li><a href="#truthiness">Truthiness</a></li>
@@ -47,10 +46,11 @@
 
 <!-- end nav -->
 <!-------------- Section ------------------>
-<h5 id="numbersStringsAndThings"><span class="inlineCode" style="font-size:22px;">Comments</span></h5>
+
 
 <div class="row">
     <div class="col-md-6">
+        <h5 id="comments"><span class="inlineCode" style="font-size:22px;">Comments</span></h5>
                 <pre><code class="language-javascript">
                     // Comments are like C. Single-line comments start with two slashes
 
@@ -70,7 +70,9 @@
                     // semicolons in this guide.
                 </code></pre>
     </div>
+
     <div class="col-md-6">
+        <h5 id="comments"><span class="inlineCode" style="font-size:22px;">Language Characteristics</span></h5>
         <div class="greyBox">
             <ul>
                 <li>Loosely typed</li>
@@ -720,7 +722,7 @@
     <div class="col-md-4"><pre><code class="language-javascript">
         console.log("array apply",
         Array.apply(null, {length: 100}).map(function(val, index) {
-        index++;
+            index++;
         if (index % 15 == 0){return "FizzBuzz";}
         if (index % 3 == 0){return "Fizz";}
         if (index % 5 == 0){return "Buzz";}
@@ -731,31 +733,31 @@
     </div>
     <div class="col-md-4"><pre><code class="language-javascript">
         function fizzbuzz(max) {
-        for ( var i = 1; i <= max; i++ ) {
-        if (i % 5 == 0 && i % 3 == 0) {
-        cprint("FizzBuzz");
-        } else if ( i % 3 == 0 ) {
-        cprint("Fizz");
-        } else if (i % 5 == 0) {
-        cprint("Buzz");
-        } else {
-        cprint(i);
-        }
-        }
+          for ( var i = 1; i <= max; i++ ) {
+            if (i % 5 == 0 && i % 3 == 0) {
+              cprint("FizzBuzz");
+            } else if ( i % 3 == 0 ) {
+                cprint("Fizz");
+            } else if (i % 5 == 0) {
+                cprint("Buzz");
+            } else {
+               cprint(i);
+            }
+          }
         }
     </code></pre>
     </div>
     <div class="col-md-4"><pre><code class="language-javascript">
         for (var i=1; i <= 20; i++) {
-        if (i % 15 == 0)
-        console.log("FizzBuzz");
-        else if (i % 3 == 0)
-        console.log("Fizz");
-        else if (i % 5 == 0)
-        console.log("Buzz");
-        else
-        console.log(i);
-        }
+          if (i % 15 == 0)
+            console.log("FizzBuzz");
+          else if (i % 3 == 0)
+            console.log("Fizz");
+          else if (i % 5 == 0)
+            console.log("Buzz");
+          else
+            console.log(i);
+          }
     </code></pre>
     </div>
 </div>
@@ -764,7 +766,7 @@
     <div class="row">
         <div class="col-md-4">
             <h5><em>Steps for this program</em></h5>
-            <ul>
+            <ol type="1">
                 <li>When the page loads, the user should be prompted to supply a number. The easiest way to do this
                     would be with the prompt() function, but you should also feel free to create a simple text input
                     with text telling the user to input a number.
@@ -789,7 +791,7 @@
                 <li><strong>DO NOT</strong> spend any time thinking about design for this app. Like the first version,
                     the goal here is not to create a pretty app, but instead to hone your JavaScript skills.
                 </li>
-            </ul>
+            </ol>
         </div>
         <div class="col-md-8">
             <h5>Click to play</h5>
